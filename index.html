@@ -1,348 +1,405 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Barbershop Hermanos — Premium Herenkapper Den Haag</title>
-    <meta name="description" content="Barbershop Hermanos — De beste barbershop in Den Haag. Knippen, fades, baard trimmen door de broers. Boek nu!">
-    <meta property="og:title" content="Barbershop Hermanos — Premium Herenkapper Den Haag">
-    <meta property="og:description" content="Brotherhood. Precision. Style. De beste barbershop van Den Haag.">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&q=80">
-    <meta property="og:type" content="website">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Star Barber — Premium Barbershop Den Haag</title>
+  <meta name="description" content="A Star Barber — Premium barbershop in Den Haag. Fades, knippen, baard trimmen & meer. 4.9★ Google Rating. Weimarstraat 57A.">
+  <meta name="keywords" content="barbershop den haag, kapper den haag, fade, baard trimmen, a star barber, weimarstraat">
+  <link rel="canonical" href="https://a-star-barber.netlify.app/">
+  <meta property="og:title" content="A Star Barber — Premium Barbershop Den Haag">
+  <meta property="og:description" content="Jouw stijl, onze passie. Premium cuts in Den Haag. 4.9★ op Google.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&q=80">
+  <meta property="og:url" content="https://a-star-barber.netlify.app/">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="A Star Barber — Premium Barbershop Den Haag">
+  <meta name="twitter:description" content="Jouw stijl, onze passie. Premium cuts in Den Haag.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&q=80">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90' fill='%23FFD700'>★</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    /* ===== RESET & BASE ===== */
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+    :root {
+      --black: #0D0D0D; --dark: #1A1A1A; --darker: #111; --gold: #FFD700; --gold-dark: #DAA520;
+      --white: #FFFFFF; --gray: #888; --glass: rgba(255,255,255,0.05); --glass-border: rgba(255,215,0,0.15);
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Inter', sans-serif; background: var(--black); color: var(--white); overflow-x: hidden; line-height: 1.6; }
+    h1, h2, h3, h4 { font-family: 'Bebas Neue', sans-serif; letter-spacing: 2px; }
+    a { color: var(--gold); text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+    .gold-text { background: linear-gradient(135deg, var(--gold), var(--gold-dark), var(--gold)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .section { padding: 100px 0; position: relative; }
+    .section-title { font-size: clamp(2.5rem, 6vw, 4rem); text-align: center; margin-bottom: 60px; }
+    .btn { display: inline-block; padding: 14px 36px; border-radius: 50px; font-family: 'Bebas Neue', sans-serif; font-size: 1.1rem; letter-spacing: 2px; transition: all .3s; cursor: pointer; border: none; }
+    .btn-gold { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: var(--black); }
+    .btn-gold:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(255,215,0,.3); }
+    .btn-outline { border: 2px solid var(--gold); color: var(--gold); background: transparent; }
+    .btn-outline:hover { background: var(--gold); color: var(--black); }
+
+    /* ===== HEXAGON BG PATTERN ===== */
+    .hex-bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; opacity: .03; pointer-events: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='100'%3E%3Cpath d='M28 66L0 50V16L28 0l28 16v34L28 66zm0 34L0 84V50l28-16 28 16v34L28 100z' fill='none' stroke='%23FFD700' stroke-width='1'/%3E%3C/svg%3E");
+    }
+    /* ===== CHECKERBOARD PATTERN ===== */
+    .checker-bg { position: absolute; bottom: 0; left: 0; width: 100%; height: 60px; opacity: .06; pointer-events: none;
+      background: repeating-conic-gradient(var(--white) 0% 25%, transparent 0% 50%) 0 0 / 30px 30px;
+    }
+
+    /* ===== STAR WATERMARK ===== */
+    .star-watermark { position: absolute; font-size: 30vw; color: var(--gold); opacity: .02; pointer-events: none; user-select: none; font-family: serif; z-index: 0; }
+
+    /* ===== WAVE DIVIDER ===== */
+    .wave-divider { width: 100%; overflow: hidden; line-height: 0; }
+    .wave-divider svg { display: block; width: 100%; height: 60px; }
+    .wave-divider svg path { fill: var(--dark); }
+
+    /* ===== GLASS CARD ===== */
+    .glass-card { background: var(--glass); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); border: 1px solid var(--glass-border); border-radius: 16px; padding: 32px; transition: transform .3s, box-shadow .3s; }
+    .glass-card:hover { transform: translateY(-6px); box-shadow: 0 12px 40px rgba(255,215,0,.1); }
+
+    /* ===== NAV ===== */
+    .nav { position: fixed; top: 0; left: 0; width: 100%; z-index: 1000; padding: 16px 0; transition: background .3s, padding .3s; }
+    .nav.scrolled { background: rgba(13,13,13,.95); backdrop-filter: blur(10px); padding: 10px 0; }
+    .nav-inner { display: flex; justify-content: space-between; align-items: center; }
+    .nav-logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.8rem; display: flex; align-items: center; gap: 8px; }
+    .nav-logo .star { color: var(--gold); font-size: 2rem; }
+    .nav-links { display: flex; gap: 28px; list-style: none; }
+    .nav-links a { color: var(--white); font-size: .9rem; font-weight: 500; transition: color .3s; text-transform: uppercase; letter-spacing: 1px; }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-toggle { display: none; background: none; border: none; color: var(--gold); font-size: 1.5rem; cursor: pointer; }
+    @media(max-width:768px) {
+      .nav-links { display: none; position: absolute; top: 100%; left: 0; width: 100%; flex-direction: column; background: rgba(13,13,13,.98); padding: 20px; gap: 16px; }
+      .nav-links.open { display: flex; }
+      .nav-toggle { display: block; }
+    }
+
+    /* ===== HERO ===== */
+    .hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; overflow: hidden; }
+    .hero-bg { position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1920&q=80') center/cover; }
+    .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(13,13,13,.7), rgba(13,13,13,.9)); }
+    .hero-content { position: relative; z-index: 2; }
+    .hero-star { font-size: clamp(6rem, 20vw, 12rem); color: var(--gold); line-height: 1; text-shadow: 0 0 60px rgba(255,215,0,.3); animation: pulse 3s ease-in-out infinite; }
+    @keyframes pulse { 0%,100% { text-shadow: 0 0 60px rgba(255,215,0,.3); } 50% { text-shadow: 0 0 100px rgba(255,215,0,.5); } }
+    .hero h1 { font-size: clamp(3rem, 10vw, 6rem); margin: 10px 0; }
+    .hero p { font-size: clamp(1rem, 2.5vw, 1.4rem); color: var(--gray); margin-bottom: 30px; font-weight: 300; }
+    .hero-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ===== STATS ===== */
+    .stats { background: var(--dark); padding: 60px 0; }
+    .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 30px; text-align: center; }
+    .stat-item h3 { font-size: 2.5rem; }
+    .stat-item p { color: var(--gray); font-size: .9rem; text-transform: uppercase; letter-spacing: 2px; margin-top: 4px; }
+
+    /* ===== ABOUT ===== */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .about-img { border-radius: 16px; overflow: hidden; position: relative; }
+    .about-img img { width: 100%; height: 500px; object-fit: cover; }
+    .about-img::after { content: '★'; position: absolute; bottom: 20px; right: 20px; font-size: 4rem; color: var(--gold); opacity: .3; }
+    .about-text h3 { font-size: 1.2rem; color: var(--gold); margin-bottom: 10px; text-transform: uppercase; letter-spacing: 3px; }
+    .about-text p { color: #ccc; margin-bottom: 16px; }
+    @media(max-width:768px) { .about-grid { grid-template-columns: 1fr; } .about-img img { height: 300px; } }
+
+    /* ===== SERVICES ===== */
+    .services-bg { background: var(--dark); }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .service-card { text-align: center; }
+    .service-card .icon { font-size: 2.5rem; margin-bottom: 16px; }
+    .service-card h3 { font-size: 1.4rem; margin-bottom: 8px; }
+    .service-card .price { font-family: 'Bebas Neue', sans-serif; font-size: 2rem; color: var(--gold); }
+    .service-card p { color: var(--gray); font-size: .9rem; margin-top: 8px; }
+
+    /* ===== GALLERY ===== */
+    .gallery-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+    .gallery-item { border-radius: 12px; overflow: hidden; aspect-ratio: 4/3; }
+    .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+    .gallery-item:hover img { transform: scale(1.08); }
+
+    /* ===== TESTIMONIALS ===== */
+    .testimonials-bg { background: var(--dark); }
+    .testimonials-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+    .testimonial-card { text-align: center; }
+    .testimonial-card .stars { color: var(--gold); font-size: 1.2rem; margin-bottom: 12px; }
+    .testimonial-card blockquote { font-style: italic; color: #ccc; margin-bottom: 16px; line-height: 1.7; }
+    .testimonial-card .author { color: var(--gold); font-weight: 600; }
+
+    /* ===== HOURS ===== */
+    .hours-table { max-width: 500px; margin: 0 auto; }
+    .hours-row { display: flex; justify-content: space-between; padding: 14px 20px; border-bottom: 1px solid rgba(255,255,255,.06); font-size: 1rem; }
+    .hours-row:nth-child(odd) { background: rgba(255,255,255,.02); border-radius: 8px; }
+    .hours-row .day { font-weight: 500; }
+    .hours-row .time { color: var(--gold); }
+    .hours-row.closed .time { color: #666; }
+
+    /* ===== MAP ===== */
+    .map-section { background: var(--dark); }
+    .map-wrapper { border-radius: 16px; overflow: hidden; border: 1px solid var(--glass-border); }
+    .map-wrapper iframe { width: 100%; height: 400px; border: 0; filter: grayscale(.8) contrast(1.1) brightness(.7); transition: filter .3s; }
+    .map-wrapper:hover iframe { filter: grayscale(.3) contrast(1) brightness(.9); }
+
+    /* ===== CONTACT CTA ===== */
+    .cta-section { text-align: center; padding: 100px 0; }
+    .cta-section h2 { margin-bottom: 20px; }
+    .cta-section p { color: var(--gray); margin-bottom: 40px; font-size: 1.1rem; }
+    .cta-buttons { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+    /* ===== FOOTER ===== */
+    footer { background: var(--darker); padding: 40px 0; text-align: center; border-top: 1px solid rgba(255,215,0,.1); }
+    footer .footer-star { font-size: 2rem; color: var(--gold); margin-bottom: 10px; }
+    footer p { color: var(--gray); font-size: .85rem; }
+
+    /* ===== FLOATING WHATSAPP ===== */
+    .whatsapp-float { position: fixed; bottom: 24px; right: 24px; width: 60px; height: 60px; background: #25D366; border-radius: 50%; display: flex; align-items: center; justify-content: center; box-shadow: 0 4px 20px rgba(37,211,102,.4); z-index: 999; transition: transform .3s; }
+    .whatsapp-float:hover { transform: scale(1.1); }
+    .whatsapp-float svg { width: 30px; height: 30px; fill: white; }
+
+    /* ===== SCROLL REVEAL ===== */
+    .reveal { opacity: 0; transform: translateY(30px); transition: opacity .8s, transform .8s; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+  </style>
+
+  <!-- JSON-LD Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BarberShop",
+    "name": "A Star Barber",
+    "image": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&q=80",
+    "url": "https://a-star-barber.netlify.app",
+    "telephone": "+31685824464",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Weimarstraat 57A",
+      "addressLocality": "Den Haag",
+      "postalCode": "2562 GR",
+      "addressCountry": "NL"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 52.0681,
+      "longitude": 4.2890
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.9",
+      "reviewCount": "35"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"], "opens": "10:00", "closes": "19:00" }
+    ],
+    "priceRange": "€€"
+  }
+  </script>
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <a href="#" class="nav-logo">HERMANOS</a>
-        <button class="nav-toggle" id="navToggle" aria-label="Menu">
-            <span></span><span></span><span></span>
-        </button>
-        <ul class="nav-links" id="navLinks">
-            <li><a href="#over-ons">Over Ons</a></li>
-            <li><a href="#diensten">Diensten</a></li>
-            <li><a href="#galerij">Galerij</a></li>
-            <li><a href="#openingstijden">Tijden</a></li>
-            <li><a href="#locatie">Locatie</a></li>
-            <li><a href="#boek-nu" class="nav-cta">Boek Nu</a></li>
-        </ul>
-    </nav>
 
-    <!-- Barbershop Pole Accent -->
-    <div class="barber-pole" aria-hidden="true">
-        <div class="pole-stripe"></div>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="container nav-inner">
+      <a href="#" class="nav-logo"><span class="star">★</span> <span class="gold-text">A STAR BARBER</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#over-ons">Over Ons</a></li>
+        <li><a href="#diensten">Diensten</a></li>
+        <li><a href="#galerij">Galerij</a></li>
+        <li><a href="#openingstijden">Tijden</a></li>
+        <li><a href="#locatie">Locatie</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </div>
+  </nav>
 
-    <!-- Hero Section -->
-    <section class="hero" id="hero">
-        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1920&q=80')"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content reveal">
-            <p class="hero-subtitle">PREMIUM BARBERSHOP — DEN HAAG</p>
-            <h1 class="hero-title">HERMANOS</h1>
-            <p class="hero-tagline">Brotherhood. Precision. Style.</p>
-            <div class="hero-ctas">
-                <a href="https://www.knipklok.nl" target="_blank" class="btn btn-gold">Boek Nu</a>
-                <a href="#diensten" class="btn btn-outline">Onze Diensten</a>
-            </div>
-        </div>
-        <div class="hero-scroll-indicator">
-            <span></span>
-        </div>
-    </section>
-
-    <!-- Wave Divider 1 -->
-    <div class="wave-divider">
-        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,60 C360,120 1080,0 1440,60 L1440,100 L0,100Z" fill="#0D0D0D"/></svg>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hex-bg"></div>
+    <div class="hero-content">
+      <div class="hero-star">★</div>
+      <h1 class="gold-text">A STAR BARBER</h1>
+      <p>Jouw stijl, onze passie — Premium barbershop in Den Haag</p>
+      <div class="hero-buttons">
+        <a href="https://wa.me/31685824464" class="btn btn-gold" target="_blank">📱 WhatsApp</a>
+        <a href="tel:+31685824464" class="btn btn-outline">✆ Bel Ons</a>
+      </div>
     </div>
+    <div class="checker-bg"></div>
+  </section>
 
-    <!-- Stats Bar -->
-    <section class="stats-bar">
-        <div class="container stats-grid">
-            <div class="stat reveal">
-                <span class="stat-icon">✂️</span>
-                <span class="stat-number" data-target="2019">0</span>
-                <span class="stat-label">Brotherhood Since</span>
-            </div>
-            <div class="stat reveal">
-                <span class="stat-icon">👥</span>
-                <span class="stat-number" data-target="5000" data-suffix="+">0</span>
-                <span class="stat-label">Tevreden Klanten</span>
-            </div>
-            <div class="stat reveal">
-                <span class="stat-icon">⭐</span>
-                <span class="stat-number" data-target="4.8" data-decimal="true">0</span>
-                <span class="stat-label">Google Rating</span>
-            </div>
-            <div class="stat reveal">
-                <span class="stat-icon">💈</span>
-                <span class="stat-number" data-target="6">0</span>
-                <span class="stat-label">Diensten</span>
-            </div>
-        </div>
-    </section>
+  <!-- WAVE -->
+  <div class="wave-divider"><svg viewBox="0 0 1200 60" preserveAspectRatio="none"><path d="M0,30 C300,60 900,0 1200,30 L1200,60 L0,60 Z"/></svg></div>
 
-    <!-- Wave Divider 2 -->
-    <div class="wave-divider wave-flip">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,0 C480,80 960,0 1440,40 L1440,80 L0,80Z" fill="#1A1A1A"/></svg>
+  <!-- STATS -->
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid reveal">
+        <div class="stat-item"><h3 class="gold-text">4.9 ★</h3><p>Google Rating</p></div>
+        <div class="stat-item"><h3 class="gold-text">35+</h3><p>Reviews</p></div>
+        <div class="stat-item"><h3 class="gold-text">Premium</h3><p>Cuts & Styles</p></div>
+        <div class="stat-item"><h3 class="gold-text">6/7</h3><p>Dagen Open</p></div>
+      </div>
     </div>
+  </section>
 
-    <!-- Over Ons -->
-    <section class="about" id="over-ons">
-        <div class="container about-grid">
-            <div class="about-image reveal">
-                <div class="about-img-wrapper">
-                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80" alt="Barber aan het werk" loading="lazy">
-                    <div class="about-img-border"></div>
-                </div>
-            </div>
-            <div class="about-text reveal">
-                <span class="section-tag">Ons Verhaal</span>
-                <h2 class="section-title gradient-text">MEER DAN EEN<br>BARBERSHOP</h2>
-                <p>Bij Barbershop Hermanos draait alles om broederschap. Wat begon als een droom van twee broers is uitgegroeid tot dé plek in Den Haag waar mannen samenkomen voor meer dan alleen een knipbeurt.</p>
-                <p>Onze barbers combineren traditioneel vakmanschap met moderne technieken. Of je nu komt voor een strakke fade, een klassieke knipbeurt of een perfecte baard trim — bij ons ben je in vertrouwde handen.</p>
-                <p>Stap binnen, pak een stoel, en voel de vibe. Dit is Hermanos.</p>
-                <a href="#boek-nu" class="btn btn-gold">Maak Een Afspraak</a>
-            </div>
+  <!-- ABOUT -->
+  <section class="section" id="over-ons">
+    <div class="star-watermark" style="top:-10%;right:-5%;">★</div>
+    <div class="hex-bg"></div>
+    <div class="container">
+      <h2 class="section-title gold-text reveal">Over Ons</h2>
+      <div class="about-grid reveal">
+        <div class="about-img">
+          <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80" alt="Barber aan het werk bij A Star Barber" loading="lazy">
         </div>
-    </section>
-
-    <!-- Wave Divider 3 -->
-    <div class="wave-divider">
-        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 Q360,100 720,50 T1440,70 L1440,100 L0,100Z" fill="#0D0D0D"/></svg>
+        <div class="about-text">
+          <h3>Meer dan een knipbeurt</h3>
+          <p>Bij A Star Barber in de Weimarstraat draait alles om vakmanschap en stijl. Onze barbershop combineert traditioneel ambacht met moderne technieken voor een resultaat waar je mee gezien mag worden.</p>
+          <p>Met ons kenmerkende zwart-gouden interieur, hexagonale LED-verlichting en oog voor detail creëren we een premium ervaring. Van een strakke fade tot een perfecte baard — wij leveren alleen sterrenwerk. ★</p>
+          <p>Geen afspraak nodig — loop binnen en ervaar het zelf.</p>
+          <a href="#diensten" class="btn btn-outline" style="margin-top:16px;">Bekijk Diensten</a>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Diensten -->
-    <section class="services" id="diensten">
-        <div class="services-bg" style="background-image: url('https://images.unsplash.com/photo-1585747860019-024c094e8b64?w=1920&q=80')"></div>
-        <div class="services-overlay"></div>
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Wat Wij Bieden</span>
-                <h2 class="section-title gradient-text">ONZE DIENSTEN</h2>
-            </div>
-            <div class="services-grid">
-                <div class="service-card reveal">
-                    <div class="service-icon">✂️</div>
-                    <h3>Knippen</h3>
-                    <p>Klassiek of modern — altijd op maat.</p>
-                    <span class="service-price">€22</span>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">🪒</div>
-                    <h3>Baard Trimmen</h3>
-                    <p>Scherp, verzorgd, perfect in vorm.</p>
-                    <span class="service-price">€15</span>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">💈</div>
-                    <h3>Knippen + Baard</h3>
-                    <p>De complete Hermanos behandeling.</p>
-                    <span class="service-price">€32</span>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">🔪</div>
-                    <h3>Scheren</h3>
-                    <p>Traditioneel scheermes, ultiem smooth.</p>
-                    <span class="service-price">€18</span>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">💇</div>
-                    <h3>Fade</h3>
-                    <p>Van skin fade tot mid fade — razor sharp.</p>
-                    <span class="service-price">€25</span>
-                </div>
-                <div class="service-card reveal">
-                    <div class="service-icon">👦</div>
-                    <h3>Kids Knippen</h3>
-                    <p>Stoere kapsels voor de kleine mannen.</p>
-                    <span class="service-price">€15</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Wave Divider 4 -->
-    <div class="wave-divider">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,20 C240,80 480,0 720,40 C960,80 1200,0 1440,30 L1440,80 L0,80Z" fill="#1A1A1A"/></svg>
+  <!-- SERVICES -->
+  <section class="section services-bg" id="diensten">
+    <div class="hex-bg"></div>
+    <div class="container">
+      <h2 class="section-title gold-text reveal">Diensten</h2>
+      <div class="services-grid">
+        <div class="glass-card service-card reveal"><div class="icon">✂️</div><h3>Knippen</h3><div class="price">€22</div><p>Knipbeurt naar wens met styling</p></div>
+        <div class="glass-card service-card reveal"><div class="icon">🪒</div><h3>Baard Trimmen</h3><div class="price">€15</div><p>Baard in perfecte vorm</p></div>
+        <div class="glass-card service-card reveal"><div class="icon">⭐</div><h3>Combo</h3><div class="price">€32</div><p>Knippen + baard trimmen</p></div>
+        <div class="glass-card service-card reveal"><div class="icon">💈</div><h3>Fade</h3><div class="price">€25</div><p>Skin fade, mid fade, high fade</p></div>
+        <div class="glass-card service-card reveal"><div class="icon">🪒</div><h3>Scheren</h3><div class="price">€18</div><p>Traditioneel scheren met mes</p></div>
+        <div class="glass-card service-card reveal"><div class="icon">👦</div><h3>Kids</h3><div class="price">€15</div><p>Kinderen t/m 12 jaar</p></div>
+      </div>
     </div>
+  </section>
 
-    <!-- Galerij -->
-    <section class="gallery" id="galerij">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Ons Werk</span>
-                <h2 class="section-title gradient-text">GALERIJ</h2>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80" alt="Fade kapsel" loading="lazy"><div class="gallery-overlay"><span>Fresh Fade</span></div></div>
-                <div class="gallery-item gallery-tall reveal"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80" alt="Baard trim" loading="lazy"><div class="gallery-overlay"><span>Beard Game</span></div></div>
-                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?w=600&q=80" alt="Barber tools" loading="lazy"><div class="gallery-overlay"><span>Precision Tools</span></div></div>
-                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80" alt="Barbershop interieur" loading="lazy"><div class="gallery-overlay"><span>De Shop</span></div></div>
-                <div class="gallery-item gallery-wide reveal"><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=800&q=80" alt="Klassiek knippen" loading="lazy"><div class="gallery-overlay"><span>Classic Cuts</span></div></div>
-                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1635273051137-7e04a4ecdbd1?w=600&q=80" alt="Styling" loading="lazy"><div class="gallery-overlay"><span>Styled Right</span></div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Wave Divider 5 -->
-    <div class="wave-divider wave-flip">
-        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,60 C360,0 1080,100 1440,40 L1440,100 L0,100Z" fill="#0D0D0D"/></svg>
+  <!-- GALLERY -->
+  <section class="section" id="galerij">
+    <div class="container">
+      <h2 class="section-title gold-text reveal">Galerij</h2>
+      <div class="gallery-grid reveal">
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80" alt="Barbershop interieur" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80" alt="Fade kapsel" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1585747860019-8e39e1e2e3b7?w=600&q=80" alt="Baard trimmen" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=600&q=80" alt="Barber tools" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1596362462321-4f4d5e79e076?w=600&q=80" alt="Knipbeurt" loading="lazy"></div>
+        <div class="gallery-item"><img src="https://images.unsplash.com/photo-1634302086887-13b95f4d4252?w=600&q=80" alt="Barbershop sfeer" loading="lazy"></div>
+      </div>
     </div>
+  </section>
 
-    <!-- Testimonials -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Reviews</span>
-                <h2 class="section-title gradient-text">WAT KLANTEN ZEGGEN</h2>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card reveal">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Beste barbershop in Den Haag, zonder twijfel. Mijn fade zit er elke keer weer strak in. De sfeer is top en de jongens zijn echte vakmensen."</p>
-                    <div class="testimonial-author">
-                        <strong>Mohammed A.</strong>
-                        <span>Vaste klant sinds 2020</span>
-                    </div>
-                </div>
-                <div class="testimonial-card reveal">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Kom hier al jaren en ga nooit meer ergens anders heen. Ze luisteren echt naar wat je wilt en het resultaat is altijd perfect. Aanrader!"</p>
-                    <div class="testimonial-author">
-                        <strong>Kevin de V.</strong>
-                        <span>Vaste klant</span>
-                    </div>
-                </div>
-                <div class="testimonial-card reveal">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p>"Mijn zoon van 8 wil nergens anders meer heen. Ze nemen alle tijd en hij komt er altijd super blij uit. Top service!"</p>
-                    <div class="testimonial-author">
-                        <strong>Ricardo M.</strong>
-                        <span>Klant</span>
-                    </div>
-                </div>
-                <div class="testimonial-card reveal">
-                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
-                    <p>"De combo knippen + baard is echt next level hier. Goede prijs-kwaliteit en altijd een relaxte vibe in de shop. Brotherhood is real!"</p>
-                    <div class="testimonial-author">
-                        <strong>Youssef B.</strong>
-                        <span>Vaste klant sinds 2021</span>
-                    </div>
-                </div>
-            </div>
+  <!-- TESTIMONIALS -->
+  <section class="section testimonials-bg" id="reviews">
+    <div class="hex-bg"></div>
+    <div class="container">
+      <h2 class="section-title gold-text reveal">Wat Klanten Zeggen</h2>
+      <div class="testimonials-grid">
+        <div class="glass-card testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Beste barbershop van Den Haag! Altijd een strakke fade en super vriendelijk personeel. Ik ga nergens anders meer heen."</blockquote>
+          <div class="author">— Mohammed R.</div>
         </div>
-    </section>
-
-    <!-- Wave Divider 6 -->
-    <div class="wave-divider">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,60 Q720,-20 1440,60 L1440,80 L0,80Z" fill="#1A1A1A"/></svg>
+        <div class="glass-card testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Toppers! Precies wat ik wilde, zonder veel woorden nodig. De sfeer is ook echt premium. Aanrader!"</blockquote>
+          <div class="author">— Kevin D.</div>
+        </div>
+        <div class="glass-card testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Neem m'n zoon hier altijd mee naartoe. Goede prijs, snel klaar en het resultaat is elke keer perfect."</blockquote>
+          <div class="author">— Sandra V.</div>
+        </div>
+        <div class="glass-card testimonial-card reveal">
+          <div class="stars">★★★★★</div>
+          <blockquote>"Eindelijk een barbier die snapt wat een goede baard trim is. Ziet er altijd strak uit als ik hier vandaan kom."</blockquote>
+          <div class="author">— Youssef B.</div>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <!-- Openingstijden -->
-    <section class="hours" id="openingstijden">
-        <div class="container">
-            <div class="section-header reveal">
-                <span class="section-tag">Wanneer</span>
-                <h2 class="section-title gradient-text">OPENINGSTIJDEN</h2>
-            </div>
-            <div class="hours-card reveal">
-                <table class="hours-table">
-                    <tr><td>Maandag</td><td>11:00 — 21:00</td></tr>
-                    <tr><td>Dinsdag</td><td>11:00 — 21:00</td></tr>
-                    <tr><td>Woensdag</td><td>11:00 — 21:00</td></tr>
-                    <tr><td>Donderdag</td><td>11:00 — 21:00</td></tr>
-                    <tr class="highlight"><td>Vrijdag</td><td>11:00 — 22:00</td></tr>
-                    <tr class="highlight"><td>Zaterdag</td><td>10:00 — 21:00</td></tr>
-                    <tr><td>Zondag</td><td>11:00 — 20:00</td></tr>
-                </table>
-                <p class="hours-note">Walk-ins welkom • Online boeken via Knipklok</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Wave Divider 7 -->
-    <div class="wave-divider wave-flip">
-        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,80 C480,0 960,100 1440,20 L1440,100 L0,100Z" fill="#0D0D0D"/></svg>
+  <!-- HOURS -->
+  <section class="section" id="openingstijden">
+    <div class="star-watermark" style="top:10%;left:-10%;">★</div>
+    <div class="container">
+      <h2 class="section-title gold-text reveal">Openingstijden</h2>
+      <div class="hours-table reveal">
+        <div class="hours-row"><span class="day">Maandag</span><span class="time">10:00 — 19:00</span></div>
+        <div class="hours-row"><span class="day">Dinsdag</span><span class="time">10:00 — 19:00</span></div>
+        <div class="hours-row"><span class="day">Woensdag</span><span class="time">10:00 — 19:00</span></div>
+        <div class="hours-row"><span class="day">Donderdag</span><span class="time">10:00 — 19:00</span></div>
+        <div class="hours-row"><span class="day">Vrijdag</span><span class="time">10:00 — 19:00</span></div>
+        <div class="hours-row"><span class="day">Zaterdag</span><span class="time">10:00 — 19:00</span></div>
+        <div class="hours-row closed"><span class="day">Zondag</span><span class="time">Gesloten</span></div>
+      </div>
     </div>
+  </section>
 
-    <!-- Locatie -->
-    <section class="location" id="locatie">
-        <div class="container location-grid">
-            <div class="location-map reveal">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.8!2d4.2965!3d52.074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDA0JzI2LjQiTiA0wrAxNyc0Ny40IkU!5e0!3m2!1snl!2snl!4v1" width="100%" height="400" style="border:0;border-radius:16px;" allowfullscreen loading="lazy"></iframe>
-            </div>
-            <div class="location-info reveal">
-                <h3>Bezoek Ons</h3>
-                <div class="location-detail">
-                    <span class="location-icon">📍</span>
-                    <div>
-                        <strong>Barbershop Hermanos</strong><br>
-                        Weimarstraat 57A<br>
-                        2562 GR Den Haag
-                    </div>
-                </div>
-                <div class="location-detail">
-                    <span class="location-icon">📞</span>
-                    <div><a href="tel:+31612212940">+31 6 1221 2940</a></div>
-                </div>
-                <div class="location-detail">
-                    <span class="location-icon">📸</span>
-                    <div><a href="https://instagram.com/barbershophermanosdh" target="_blank">@barbershophermanosdh</a></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Wave Divider 8 -->
-    <div class="wave-divider">
-        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1080,60 C1260,80 1440,20 1440,40 L1440,80 L0,80Z" fill="#1A1A1A"/></svg>
+  <!-- MAP -->
+  <section class="section map-section" id="locatie">
+    <div class="container">
+      <h2 class="section-title gold-text reveal">Locatie</h2>
+      <p style="text-align:center;color:var(--gray);margin-bottom:30px;" class="reveal">Weimarstraat 57A, 2562 GR Den Haag</p>
+      <div class="map-wrapper reveal">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.5!2d4.2890!3d52.0681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sWeimarstraat+57A%2C+Den+Haag!5e0!3m2!1snl!2snl!4v1" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="A Star Barber locatie"></iframe>
+      </div>
     </div>
+  </section>
 
-    <!-- Boek Nu CTA -->
-    <section class="cta-section" id="boek-nu">
-        <div class="container">
-            <div class="cta-content reveal">
-                <span class="section-tag">Ready?</span>
-                <h2 class="section-title gradient-text">BOEK JE AFSPRAAK</h2>
-                <p>Online boeken via Knipklok, bel ons direct, of volg ons op Instagram.</p>
-                <div class="cta-buttons">
-                    <a href="https://www.knipklok.nl" target="_blank" class="btn btn-gold btn-lg">📅 Boek via Knipklok</a>
-                    <a href="tel:+31612212940" class="btn btn-outline btn-lg">📞 +31 6 1221 2940</a>
-                    <a href="https://instagram.com/barbershophermanosdh" target="_blank" class="btn btn-outline btn-lg">📸 Instagram</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- CONTACT CTA -->
+  <section class="section cta-section" id="contact">
+    <div class="hex-bg"></div>
+    <div class="container reveal">
+      <h2 class="section-title gold-text">Klaar Voor Een Fresh Cut?</h2>
+      <p>Maak een afspraak via WhatsApp of loop gewoon binnen!</p>
+      <div class="cta-buttons">
+        <a href="https://wa.me/31685824464" class="btn btn-gold" target="_blank">💬 WhatsApp</a>
+        <a href="tel:+31685824464" class="btn btn-outline">📞 Bel Ons</a>
+        <a href="https://www.google.com/maps/dir//Weimarstraat+57A,+2562+GR+Den+Haag" class="btn btn-outline" target="_blank">📍 Route</a>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <h3 class="gradient-text">HERMANOS</h3>
-                    <p>Brotherhood. Precision. Style.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#over-ons">Over Ons</a>
-                    <a href="#diensten">Diensten</a>
-                    <a href="#galerij">Galerij</a>
-                    <a href="#openingstijden">Tijden</a>
-                </div>
-                <div class="footer-contact">
-                    <p>Weimarstraat 57A, Den Haag</p>
-                    <a href="tel:+31612212940">+31 6 1221 2940</a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Barbershop Hermanos. Alle rechten voorbehouden.</p>
-            </div>
-        </div>
-    </footer>
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-star">★</div>
+      <p class="gold-text" style="font-family:'Bebas Neue';font-size:1.4rem;margin-bottom:8px;">A STAR BARBER</p>
+      <p>Weimarstraat 57A, 2562 GR Den Haag — <a href="tel:+31685824464">+31 6 8582 4464</a></p>
+      <p style="margin-top:12px;">© 2026 A Star Barber. Alle rechten voorbehouden.</p>
+    </div>
+  </footer>
 
-    <script src="script.js"></script>
+  <!-- FLOATING WHATSAPP -->
+  <a href="https://wa.me/31685824464" class="whatsapp-float" target="_blank" aria-label="Chat op WhatsApp">
+    <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <!-- JS -->
+  <script>
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 50));
+
+    // Mobile menu
+    document.getElementById('navToggle').addEventListener('click', () => document.getElementById('navLinks').classList.toggle('open'));
+    document.querySelectorAll('.nav-links a').forEach(a => a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open')));
+
+    // Scroll reveal
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
 </body>
 </html>

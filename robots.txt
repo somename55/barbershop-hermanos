@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://a-star-barber.netlify.app/sitemap.xml
