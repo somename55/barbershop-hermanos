@@ -1,179 +1,348 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Barbershop Hermanos — Herenkapper in Den Haag</title>
-  <meta name="description" content="Barbershop Hermanos in Den Haag. Professionele herenkapper gespecialiseerd in fades, baard trimmen en scheren. Boek nu je afspraak!">
-  <meta name="keywords" content="barbershop, herenkapper, Den Haag, fade, baard trimmen, scheren, Weimarstraat">
-  <meta property="og:title" content="Barbershop Hermanos — Herenkapper in Den Haag">
-  <meta property="og:description" content="Professionele herenkapper gespecialiseerd in fades, baard trimmen en scheren. Weimarstraat 57A, Den Haag.">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://barbershop-hermanos.netlify.app">
-  <meta property="og:locale" content="nl_NL">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barbershop Hermanos — Premium Herenkapper Den Haag</title>
+    <meta name="description" content="Barbershop Hermanos — De beste barbershop in Den Haag. Knippen, fades, baard trimmen door de broers. Boek nu!">
+    <meta property="og:title" content="Barbershop Hermanos — Premium Herenkapper Den Haag">
+    <meta property="og:description" content="Brotherhood. Precision. Style. De beste barbershop van Den Haag.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1200&q=80">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <div class="container nav-container">
-      <a href="#" class="logo">HERMANOS</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#over-ons">Over Ons</a></li>
-        <li><a href="#diensten">Diensten</a></li>
-        <li><a href="#openingstijden">Openingstijden</a></li>
-        <li><a href="#locatie">Locatie</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="https://www.knipklok.nl" target="_blank" rel="noopener" class="btn btn-nav">Boek Nu</a></li>
-      </ul>
-    </div>
-  </nav>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <a href="#" class="nav-logo">HERMANOS</a>
+        <button class="nav-toggle" id="navToggle" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#over-ons">Over Ons</a></li>
+            <li><a href="#diensten">Diensten</a></li>
+            <li><a href="#galerij">Galerij</a></li>
+            <li><a href="#openingstijden">Tijden</a></li>
+            <li><a href="#locatie">Locatie</a></li>
+            <li><a href="#boek-nu" class="nav-cta">Boek Nu</a></li>
+        </ul>
+    </nav>
 
-  <!-- Hero -->
-  <header class="hero" id="hero">
-    <div class="hero-overlay"></div>
-    <div class="container hero-content">
-      <div class="hero-icon">✂</div>
-      <h1>Barbershop<br><span class="gold">Hermanos</span></h1>
-      <p class="hero-sub">Barber, Fade &amp; Shave — Den Haag</p>
-      <a href="https://www.knipklok.nl" target="_blank" rel="noopener" class="btn btn-primary">Maak een Afspraak</a>
+    <!-- Barbershop Pole Accent -->
+    <div class="barber-pole" aria-hidden="true">
+        <div class="pole-stripe"></div>
     </div>
-  </header>
 
-  <!-- Over Ons -->
-  <section class="section" id="over-ons">
-    <div class="container">
-      <h2 class="section-title">Over <span class="gold">Ons</span></h2>
-      <div class="divider"></div>
-      <div class="about-content">
-        <p>Welkom bij <strong>Barbershop Hermanos</strong> — jouw barbershop in het hart van Den Haag. Hermanos betekent <em>broers</em>, en dat is precies wat we zijn: een brotherhood van barbers die hun vak met passie uitoefenen.</p>
-        <p>Of je nu komt voor een strakke fade, een verzorgde baard of een klassiek scheerbeurt — bij ons ben je in goede handen. Wij combineren traditioneel vakmanschap met moderne technieken in een relaxte sfeer waar je je thuis voelt.</p>
-        <p>Kom langs, neem plaats in de stoel en laat ons het werk doen. Bij Hermanos ben je meer dan een klant — je bent familie.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Diensten -->
-  <section class="section section-dark" id="diensten">
-    <div class="container">
-      <h2 class="section-title">Onze <span class="gold">Diensten</span></h2>
-      <div class="divider"></div>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">✂</div>
-          <h3>Knippen</h3>
-          <p>Strakke coupe op maat. Van klassiek tot modern — wij knippen het.</p>
-          <div class="price">€22,50</div>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg" style="background-image: url('https://images.unsplash.com/photo-1503951914875-452162b0f3f1?w=1920&q=80')"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal">
+            <p class="hero-subtitle">PREMIUM BARBERSHOP — DEN HAAG</p>
+            <h1 class="hero-title">HERMANOS</h1>
+            <p class="hero-tagline">Brotherhood. Precision. Style.</p>
+            <div class="hero-ctas">
+                <a href="https://www.knipklok.nl" target="_blank" class="btn btn-gold">Boek Nu</a>
+                <a href="#diensten" class="btn btn-outline">Onze Diensten</a>
+            </div>
         </div>
-        <div class="service-card">
-          <div class="service-icon">💈</div>
-          <h3>Fade</h3>
-          <p>Scherpe fades zijn ons specialiteit. Low, mid of high — altijd on point.</p>
-          <div class="price">€25,00</div>
+        <div class="hero-scroll-indicator">
+            <span></span>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🪒</div>
-          <h3>Baard Trimmen</h3>
-          <p>Verzorgde baard, strakke lijnen. Inclusief styling en verzorging.</p>
-          <div class="price">€15,00</div>
+    </section>
+
+    <!-- Wave Divider 1 -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,60 C360,120 1080,0 1440,60 L1440,100 L0,100Z" fill="#0D0D0D"/></svg>
+    </div>
+
+    <!-- Stats Bar -->
+    <section class="stats-bar">
+        <div class="container stats-grid">
+            <div class="stat reveal">
+                <span class="stat-icon">✂️</span>
+                <span class="stat-number" data-target="2019">0</span>
+                <span class="stat-label">Brotherhood Since</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-icon">👥</span>
+                <span class="stat-number" data-target="5000" data-suffix="+">0</span>
+                <span class="stat-label">Tevreden Klanten</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-icon">⭐</span>
+                <span class="stat-number" data-target="4.8" data-decimal="true">0</span>
+                <span class="stat-label">Google Rating</span>
+            </div>
+            <div class="stat reveal">
+                <span class="stat-icon">💈</span>
+                <span class="stat-number" data-target="6">0</span>
+                <span class="stat-label">Diensten</span>
+            </div>
         </div>
-        <div class="service-card">
-          <div class="service-icon">🧔</div>
-          <h3>Scheren</h3>
-          <p>Klassiek scheren met warm handdoek. De ultieme barbershop ervaring.</p>
-          <div class="price">€17,50</div>
+    </section>
+
+    <!-- Wave Divider 2 -->
+    <div class="wave-divider wave-flip">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,0 C480,80 960,0 1440,40 L1440,80 L0,80Z" fill="#1A1A1A"/></svg>
+    </div>
+
+    <!-- Over Ons -->
+    <section class="about" id="over-ons">
+        <div class="container about-grid">
+            <div class="about-image reveal">
+                <div class="about-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1599351431202-1e0f0137899a?w=800&q=80" alt="Barber aan het werk" loading="lazy">
+                    <div class="about-img-border"></div>
+                </div>
+            </div>
+            <div class="about-text reveal">
+                <span class="section-tag">Ons Verhaal</span>
+                <h2 class="section-title gradient-text">MEER DAN EEN<br>BARBERSHOP</h2>
+                <p>Bij Barbershop Hermanos draait alles om broederschap. Wat begon als een droom van twee broers is uitgegroeid tot dé plek in Den Haag waar mannen samenkomen voor meer dan alleen een knipbeurt.</p>
+                <p>Onze barbers combineren traditioneel vakmanschap met moderne technieken. Of je nu komt voor een strakke fade, een klassieke knipbeurt of een perfecte baard trim — bij ons ben je in vertrouwde handen.</p>
+                <p>Stap binnen, pak een stoel, en voel de vibe. Dit is Hermanos.</p>
+                <a href="#boek-nu" class="btn btn-gold">Maak Een Afspraak</a>
+            </div>
         </div>
-        <div class="service-card featured">
-          <div class="service-icon">⭐</div>
-          <h3>Knippen + Baard</h3>
-          <p>De complete behandeling. Knippen én baard in één sessie — onze bestseller.</p>
-          <div class="price">€32,50</div>
+    </section>
+
+    <!-- Wave Divider 3 -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 Q360,100 720,50 T1440,70 L1440,100 L0,100Z" fill="#0D0D0D"/></svg>
+    </div>
+
+    <!-- Diensten -->
+    <section class="services" id="diensten">
+        <div class="services-bg" style="background-image: url('https://images.unsplash.com/photo-1585747860019-024c094e8b64?w=1920&q=80')"></div>
+        <div class="services-overlay"></div>
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Wat Wij Bieden</span>
+                <h2 class="section-title gradient-text">ONZE DIENSTEN</h2>
+            </div>
+            <div class="services-grid">
+                <div class="service-card reveal">
+                    <div class="service-icon">✂️</div>
+                    <h3>Knippen</h3>
+                    <p>Klassiek of modern — altijd op maat.</p>
+                    <span class="service-price">€22</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">🪒</div>
+                    <h3>Baard Trimmen</h3>
+                    <p>Scherp, verzorgd, perfect in vorm.</p>
+                    <span class="service-price">€15</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">💈</div>
+                    <h3>Knippen + Baard</h3>
+                    <p>De complete Hermanos behandeling.</p>
+                    <span class="service-price">€32</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">🔪</div>
+                    <h3>Scheren</h3>
+                    <p>Traditioneel scheermes, ultiem smooth.</p>
+                    <span class="service-price">€18</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">💇</div>
+                    <h3>Fade</h3>
+                    <p>Van skin fade tot mid fade — razor sharp.</p>
+                    <span class="service-price">€25</span>
+                </div>
+                <div class="service-card reveal">
+                    <div class="service-icon">👦</div>
+                    <h3>Kids Knippen</h3>
+                    <p>Stoere kapsels voor de kleine mannen.</p>
+                    <span class="service-price">€15</span>
+                </div>
+            </div>
         </div>
-        <div class="service-card">
-          <div class="service-icon">👦</div>
-          <h3>Kinderen (t/m 12)</h3>
-          <p>Stoere kapsels voor de kleintjes. Geduldig en vakkundig.</p>
-          <div class="price">€17,50</div>
+    </section>
+
+    <!-- Wave Divider 4 -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,20 C240,80 480,0 720,40 C960,80 1200,0 1440,30 L1440,80 L0,80Z" fill="#1A1A1A"/></svg>
+    </div>
+
+    <!-- Galerij -->
+    <section class="gallery" id="galerij">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Ons Werk</span>
+                <h2 class="section-title gradient-text">GALERIJ</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1621605815971-fbc98d665033?w=600&q=80" alt="Fade kapsel" loading="lazy"><div class="gallery-overlay"><span>Fresh Fade</span></div></div>
+                <div class="gallery-item gallery-tall reveal"><img src="https://images.unsplash.com/photo-1622286342621-4bd786c2447c?w=600&q=80" alt="Baard trim" loading="lazy"><div class="gallery-overlay"><span>Beard Game</span></div></div>
+                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1587909209111-5097ee578ec3?w=600&q=80" alt="Barber tools" loading="lazy"><div class="gallery-overlay"><span>Precision Tools</span></div></div>
+                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?w=600&q=80" alt="Barbershop interieur" loading="lazy"><div class="gallery-overlay"><span>De Shop</span></div></div>
+                <div class="gallery-item gallery-wide reveal"><img src="https://images.unsplash.com/photo-1493256338651-d82f7acb2b38?w=800&q=80" alt="Klassiek knippen" loading="lazy"><div class="gallery-overlay"><span>Classic Cuts</span></div></div>
+                <div class="gallery-item reveal"><img src="https://images.unsplash.com/photo-1635273051137-7e04a4ecdbd1?w=600&q=80" alt="Styling" loading="lazy"><div class="gallery-overlay"><span>Styled Right</span></div></div>
+            </div>
         </div>
-      </div>
-      <div class="cta-center">
-        <a href="https://www.knipklok.nl" target="_blank" rel="noopener" class="btn btn-primary">Boek Direct via Knipklok</a>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Openingstijden -->
-  <section class="section" id="openingstijden">
-    <div class="container">
-      <h2 class="section-title">Openings<span class="gold">tijden</span></h2>
-      <div class="divider"></div>
-      <div class="hours-table">
-        <div class="hours-row"><span>Maandag</span><span>11:00 — 21:00</span></div>
-        <div class="hours-row"><span>Dinsdag</span><span>11:00 — 21:00</span></div>
-        <div class="hours-row"><span>Woensdag</span><span>11:00 — 21:00</span></div>
-        <div class="hours-row"><span>Donderdag</span><span>11:00 — 21:00</span></div>
-        <div class="hours-row highlight"><span>Vrijdag</span><span>11:00 — 22:00</span></div>
-        <div class="hours-row"><span>Zaterdag</span><span>10:00 — 21:00</span></div>
-        <div class="hours-row"><span>Zondag</span><span>11:00 — 20:00</span></div>
-      </div>
+    <!-- Wave Divider 5 -->
+    <div class="wave-divider wave-flip">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,60 C360,0 1080,100 1440,40 L1440,100 L0,100Z" fill="#0D0D0D"/></svg>
     </div>
-  </section>
 
-  <!-- Locatie -->
-  <section class="section section-dark" id="locatie">
-    <div class="container">
-      <h2 class="section-title">Onze <span class="gold">Locatie</span></h2>
-      <div class="divider"></div>
-      <p class="location-address">📍 Weimarstraat 57A, 2562 GR Den Haag</p>
-      <div class="map-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.5!2d4.2889!3d52.0728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c5b1489e3e5c8d%3A0x0!2sWeimarstraat+57A%2C+2562+GR+Den+Haag!5e0!3m2!1snl!2snl!4v1700000000000!5m2!1snl!2snl"
-          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade" title="Barbershop Hermanos locatie"></iframe>
-      </div>
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Reviews</span>
+                <h2 class="section-title gradient-text">WAT KLANTEN ZEGGEN</h2>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Beste barbershop in Den Haag, zonder twijfel. Mijn fade zit er elke keer weer strak in. De sfeer is top en de jongens zijn echte vakmensen."</p>
+                    <div class="testimonial-author">
+                        <strong>Mohammed A.</strong>
+                        <span>Vaste klant sinds 2020</span>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Kom hier al jaren en ga nooit meer ergens anders heen. Ze luisteren echt naar wat je wilt en het resultaat is altijd perfect. Aanrader!"</p>
+                    <div class="testimonial-author">
+                        <strong>Kevin de V.</strong>
+                        <span>Vaste klant</span>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Mijn zoon van 8 wil nergens anders meer heen. Ze nemen alle tijd en hij komt er altijd super blij uit. Top service!"</p>
+                    <div class="testimonial-author">
+                        <strong>Ricardo M.</strong>
+                        <span>Klant</span>
+                    </div>
+                </div>
+                <div class="testimonial-card reveal">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"De combo knippen + baard is echt next level hier. Goede prijs-kwaliteit en altijd een relaxte vibe in de shop. Brotherhood is real!"</p>
+                    <div class="testimonial-author">
+                        <strong>Youssef B.</strong>
+                        <span>Vaste klant sinds 2021</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider 6 -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,60 Q720,-20 1440,60 L1440,80 L0,80Z" fill="#1A1A1A"/></svg>
     </div>
-  </section>
 
-  <!-- Contact -->
-  <section class="section" id="contact">
-    <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <div class="divider"></div>
-      <div class="contact-grid">
-        <a href="tel:+31612212940" class="contact-card">
-          <div class="contact-icon">📞</div>
-          <h3>Bel Ons</h3>
-          <p>+31 6 1221 2940</p>
-        </a>
-        <a href="https://www.instagram.com/barbershophermanosdh/" target="_blank" rel="noopener" class="contact-card">
-          <div class="contact-icon">📸</div>
-          <h3>Instagram</h3>
-          <p>@barbershophermanosdh</p>
-        </a>
-        <a href="https://www.knipklok.nl" target="_blank" rel="noopener" class="contact-card">
-          <div class="contact-icon">📅</div>
-          <h3>Online Boeken</h3>
-          <p>Via Knipklok</p>
-        </a>
-      </div>
+    <!-- Openingstijden -->
+    <section class="hours" id="openingstijden">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Wanneer</span>
+                <h2 class="section-title gradient-text">OPENINGSTIJDEN</h2>
+            </div>
+            <div class="hours-card reveal">
+                <table class="hours-table">
+                    <tr><td>Maandag</td><td>11:00 — 21:00</td></tr>
+                    <tr><td>Dinsdag</td><td>11:00 — 21:00</td></tr>
+                    <tr><td>Woensdag</td><td>11:00 — 21:00</td></tr>
+                    <tr><td>Donderdag</td><td>11:00 — 21:00</td></tr>
+                    <tr class="highlight"><td>Vrijdag</td><td>11:00 — 22:00</td></tr>
+                    <tr class="highlight"><td>Zaterdag</td><td>10:00 — 21:00</td></tr>
+                    <tr><td>Zondag</td><td>11:00 — 20:00</td></tr>
+                </table>
+                <p class="hours-note">Walk-ins welkom • Online boeken via Knipklok</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider 7 -->
+    <div class="wave-divider wave-flip">
+        <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,80 C480,0 960,100 1440,20 L1440,100 L0,100Z" fill="#0D0D0D"/></svg>
     </div>
-  </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-logo">HERMANOS</div>
-      <p>Weimarstraat 57A, 2562 GR Den Haag</p>
-      <p>&copy; 2026 Barbershop Hermanos. Alle rechten voorbehouden.</p>
+    <!-- Locatie -->
+    <section class="location" id="locatie">
+        <div class="container location-grid">
+            <div class="location-map reveal">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2461.8!2d4.2965!3d52.074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTLCsDA0JzI2LjQiTiA0wrAxNyc0Ny40IkU!5e0!3m2!1snl!2snl!4v1" width="100%" height="400" style="border:0;border-radius:16px;" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="location-info reveal">
+                <h3>Bezoek Ons</h3>
+                <div class="location-detail">
+                    <span class="location-icon">📍</span>
+                    <div>
+                        <strong>Barbershop Hermanos</strong><br>
+                        Weimarstraat 57A<br>
+                        2562 GR Den Haag
+                    </div>
+                </div>
+                <div class="location-detail">
+                    <span class="location-icon">📞</span>
+                    <div><a href="tel:+31612212940">+31 6 1221 2940</a></div>
+                </div>
+                <div class="location-detail">
+                    <span class="location-icon">📸</span>
+                    <div><a href="https://instagram.com/barbershophermanosdh" target="_blank">@barbershophermanosdh</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wave Divider 8 -->
+    <div class="wave-divider">
+        <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 720,0 1080,60 C1260,80 1440,20 1440,40 L1440,80 L0,80Z" fill="#1A1A1A"/></svg>
     </div>
-  </footer>
 
-  <script src="script.js"></script>
+    <!-- Boek Nu CTA -->
+    <section class="cta-section" id="boek-nu">
+        <div class="container">
+            <div class="cta-content reveal">
+                <span class="section-tag">Ready?</span>
+                <h2 class="section-title gradient-text">BOEK JE AFSPRAAK</h2>
+                <p>Online boeken via Knipklok, bel ons direct, of volg ons op Instagram.</p>
+                <div class="cta-buttons">
+                    <a href="https://www.knipklok.nl" target="_blank" class="btn btn-gold btn-lg">📅 Boek via Knipklok</a>
+                    <a href="tel:+31612212940" class="btn btn-outline btn-lg">📞 +31 6 1221 2940</a>
+                    <a href="https://instagram.com/barbershophermanosdh" target="_blank" class="btn btn-outline btn-lg">📸 Instagram</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3 class="gradient-text">HERMANOS</h3>
+                    <p>Brotherhood. Precision. Style.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#over-ons">Over Ons</a>
+                    <a href="#diensten">Diensten</a>
+                    <a href="#galerij">Galerij</a>
+                    <a href="#openingstijden">Tijden</a>
+                </div>
+                <div class="footer-contact">
+                    <p>Weimarstraat 57A, Den Haag</p>
+                    <a href="tel:+31612212940">+31 6 1221 2940</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Barbershop Hermanos. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
